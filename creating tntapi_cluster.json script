@@ -1,0 +1,1 @@
+cat s.txt | perl -lane 'push(@s,$_); END{$m=1024; $t=scalar @s;for($i=0;$i<$m;$i++){$k=int($i*$t/$m); push(@r,"\"".$s[$k]."\"")} print "[[".join(", ",@r)."]]"; }' > tntapi_cluster.json
