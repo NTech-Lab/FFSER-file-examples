@@ -13,8 +13,8 @@ ALL_PACKAGES="$FF_PACKAGES $SIDE_PACKAGES findface-data"
 now=$(date +"%m_%d_%Y.%H:%M")
 
 echo "############################
-!!!This script will remove FindFace server (include MongoDB, Tarantool). 
-All faces can be ERASED!!! 
+!!!This script will remove FindFace Server, MongoDB and Tarantool by command prompt.
+It can ERASE face data!!!
 Config files will be backed up."
 
 uninstallServer() {
@@ -104,7 +104,6 @@ uninstallServer() {
     #sudo rm /etc/apt/sources.list.d/ntechlab.list
     #sudo rm /etc/apt/sources.list.d/mongodb-org-*
     #sudo apt-key del E2CADE97
-
 
     sudo systemctl daemon-reload
     sudo apt-get update
@@ -200,7 +199,6 @@ uninstallAll() {
     sudo rm /etc/apt/sources.list.d/ntechlab.list
     sudo rm /etc/apt/sources.list.d/mongodb-org-*
     sudo apt-key del E2CADE97
-
 
     sudo systemctl daemon-reload
     sudo apt-get update
