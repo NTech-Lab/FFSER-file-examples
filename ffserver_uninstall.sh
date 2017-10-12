@@ -1,6 +1,6 @@
 #!/bin/bash
 
-FF_PACKAGES="ntls findface-nnapi fkvideo-detector python3-facenapi.core python3-facenapi findface-tarantool-server findface-tarantool-build-index findface-ui findface-mass-enroll findface-extraction-api findface-repo findface-rtmp-server findface-upload"
+FF_PACKAGES="ntls findface-nnapi fkvideo-detector python3-facenapi.core python3-facenapi findface-tarantool-server findface-tarantool-build-index findface-ui findface-mass-enroll findface-extraction-api findface-repo findface-rtmp-server findface-upload python3-nnd"
 SIDE_PACKAGES="mongod* tarantool*"
 ALL_PACKAGES="$FF_PACKAGES $SIDE_PACKAGES findface-data"
 
